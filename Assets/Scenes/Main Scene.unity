@@ -216,6 +216,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &881733714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 881733715}
+  - component: {fileID: 881733716}
+  m_Layer: 0
+  m_Name: Planets List
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &881733715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881733714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &881733716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881733714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e671c5124466d334986545b444a975b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlanetAttractors: []
 --- !u!1 &1934022034
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934022034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -113.1, y: 0, z: -161}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -374,3 +418,64 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7991756778441599386
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7991756779541568161, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: m_Name
+      value: Infected Planet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991756779541568166, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991756779541568166, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991756779541568166, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991756779541568166, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991756779541568166, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7893042
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991756779541568166, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991756779541568166, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.61400247
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991756779541568166, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991756779541568166, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991756779541568166, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 75.759
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991756779541568166, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933568464641767066, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
+      propertyPath: _rotateForce
+      value: 20
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 26cf3975a108e4347a9f9c095e7d4601, type: 3}
