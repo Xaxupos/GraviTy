@@ -7,7 +7,6 @@ public class PlanetAttractor : MonoBehaviour
 
     private const float G = 667.4f;
 
-
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
