@@ -12,9 +12,9 @@ public class PlanetAttractor : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    private void Start()
+    private void OnEnable()
     {
-        PlanetListHolder.Instance.AddPlanetToList(this);
+        PlanetListHolder.Instance.AddPlanetAttractorToList(this);
     }
 
     private void FixedUpdate()
@@ -30,7 +30,7 @@ public class PlanetAttractor : MonoBehaviour
 
     private void OnDisable()
     {
-        PlanetListHolder.Instance.RemovePlanetFromList(this);
+        PlanetListHolder.Instance.RemovePlanetAttractorFromList(this);
     }
 
     public Rigidbody GetRigidbody() => _rigidbody;

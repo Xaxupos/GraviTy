@@ -300,7 +300,7 @@ TrailRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7259218151124809996}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -397,7 +397,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7259218151124809996}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 100a805ac4b264542940f5b00af397b9, type: 3}
   m_Name: 
@@ -486,6 +486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlanetSprite: {fileID: 21300000, guid: 8e44d6a8a8cc09348b66a62b20c664ec, type: 3}
   PlanetName: Purple Gas Giant
+  SpawnPointDistance: 175
   PlanetMass: 300
   PlanetRotation: 18
   PlanetStatic: 0

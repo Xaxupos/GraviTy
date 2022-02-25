@@ -219,7 +219,7 @@ TrailRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7991756779541568161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7991756779541568161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 100a805ac4b264542940f5b00af397b9, type: 3}
   m_Name: 
@@ -405,6 +405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlanetSprite: {fileID: 21300000, guid: f199536b9a5ddc143a373f21dd47d9f8, type: 3}
   PlanetName: Infected Planet
+  SpawnPointDistance: 125
   PlanetMass: 120
   PlanetRotation: 35
   PlanetStatic: 0

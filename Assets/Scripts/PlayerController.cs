@@ -44,7 +44,11 @@ public class PlayerController : MonoBehaviour
     {
         UpdateMouseLook();
         UpdateMovement();
+        CheckForFlyKey();
+    }
 
+    private void CheckForFlyKey()
+    {
         if(Input.GetKey(KeyCode.Space))
         {
             _spaceBeingHeld = true;
