@@ -3,8 +3,10 @@ using TMPro;
 
 public class PlanetSpawner : MonoBehaviour
 {
-    [field: SerializeField] public int PlanetsToSpawn { get; set; }
     [field: SerializeField] public bool CustomSimulation { get; set; }
+    [SerializeField] private int _planetsSpawnRange;
+    [SerializeField] private int _planetsToSpawn;
+    [SerializeField] private TMP_Text _planetsSpawnRangeText;
     [SerializeField] private TMP_Text _planetsCounter;
     [SerializeField] private SimulationStarter _simulationStarter;
     [SerializeField] private PlanetSelector _planetSelector;
@@ -12,7 +14,8 @@ public class PlanetSpawner : MonoBehaviour
 
     private void Start()
     {
-        PlanetsToSpawn = 0;
+        _planetsSpawnRange = 100;
+        _planetsToSpawn = 0;
     }
 
     void Update()
@@ -23,15 +26,28 @@ public class PlanetSpawner : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.LeftArrow))
             {
-                PlanetsToSpawn--;
-                if(PlanetsToSpawn < 0) PlanetsToSpawn = 0;
-                _planetsCounter.text = "Planets to spawn: " + PlanetsToSpawn;
+                _planetsToSpawn--;
+                if(_planetsToSpawn < 0) _planetsToSpawn = 0;
+                _planetsCounter.text = "Planets: " + _planetsToSpawn;
                 GetComponent<AudioSource>().Play();
             }
             if(Input.GetKeyDown(KeyCode.RightArrow))
             {
-                PlanetsToSpawn++;
-                _planetsCounter.text = "Planets to spawn: " + PlanetsToSpawn;
+                _planetsToSpawn++;
+                _planetsCounter.text = "Planets: " + _planetsToSpawn;
+                GetComponent<AudioSource>().Play();
+            }
+            if(Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                _planetsSpawnRange += 100;
+                _planetsSpawnRangeText.text = "Spawn range: " + _planetsSpawnRange;
+                GetComponent<AudioSource>().Play();
+            }
+            if(Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                _planetsSpawnRange -= 100;
+                if(_planetsSpawnRange < 100) _planetsSpawnRange = 100;
+                _planetsSpawnRangeText.text = "Spawn range: " + _planetsSpawnRange;
                 GetComponent<AudioSource>().Play();
             }
         }
@@ -49,16 +65,11 @@ public class PlanetSpawner : MonoBehaviour
 
     public void SpawnPlanets()
     {
-        float valueToSet = PlanetsToSpawn * 60;
-
-        if(valueToSet > 4500)
-            valueToSet = 4500;
-
-        for (int i = 0; i < PlanetsToSpawn; i++)
+        for (int i = 0; i < _planetsToSpawn; i++)
         {
-            var xPosition = Random.Range(-valueToSet, valueToSet);
-            var yPosition = Random.Range(-valueToSet, valueToSet);
-            var zPosition = Random.Range(-valueToSet, valueToSet);
+            var xPosition = Random.Range(-_planetsSpawnRange, _planetsSpawnRange);
+            var yPosition = Random.Range(-_planetsSpawnRange, _planetsSpawnRange);
+            var zPosition = Random.Range(-_planetsSpawnRange, _planetsSpawnRange);
 
             Vector3 spawnPosition = new Vector3(xPosition, yPosition, zPosition);
             var planetToSpawnIndex = Random.Range(0, PlanetListHolder.Instance.AllPlanetsAvailable.Count);
