@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        _characterController.detectCollisions = false;
         LockAndHideCursor();
     }
 
