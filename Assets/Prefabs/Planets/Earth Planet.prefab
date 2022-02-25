@@ -51,11 +51,11 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 10000
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -88,7 +88,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -103,7 +103,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.35555556
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7de120360bcddbd4ab5158c9103b3dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AudioSource: {fileID: 1712640137}
+  _AudioSource: {fileID: 1712640137}
   _clip: {fileID: 8300000, guid: 47a0a780790313843926f674d04b73e3, type: 3}
 --- !u!1 &5740754343081245312
 GameObject:
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dffdd17441b6a84889c5deb5c983f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotateForce: 40
+  _rotateForce: 50
 --- !u!114 &1006570592
 MonoBehaviour:
   m_ObjectHideFlags: 0

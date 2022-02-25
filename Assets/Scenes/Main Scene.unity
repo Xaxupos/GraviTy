@@ -344,80 +344,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &849360964
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3945469889552453674, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_Name
-      value: Crater Planet
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -108.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3946600846333210074, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6b9e87f9c7323ab42b0880a3514b06c2, type: 3}
 --- !u!1 &881733714
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -16, y: 14.700012}
+  m_AnchoredPosition: {x: -16, y: 14.699951}
   m_SizeDelta: {x: 287.0338, y: 136.1312}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1073217699
@@ -530,8 +456,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 1962934271
-  m_fontColor: {r: 1, g: 1, b: 1, a: 0.45490196}
+    rgba: 268435455
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0.05882353}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -598,75 +524,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073217697}
   m_CullTransparentMesh: 1
---- !u!1001 &1328056433
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3945469889552453674, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_Name
-      value: Crater Planet (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3945469889552453675, guid: 6b9e87f9c7323ab42b0880a3514b06c2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6b9e87f9c7323ab42b0880a3514b06c2, type: 3}
 --- !u!1 &1775068669
 GameObject:
   m_ObjectHideFlags: 0

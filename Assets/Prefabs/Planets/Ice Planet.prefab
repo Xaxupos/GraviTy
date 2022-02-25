@@ -30,7 +30,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7259218151124809999}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1036763501
 AudioSource:
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _AudioSource: {fileID: 1036763501}
   _clip: {fileID: 8300000, guid: 47a0a780790313843926f674d04b73e3, type: 3}
---- !u!1 &7258083933655922938
+--- !u!1 &3423075967897938552
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,9 +150,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7254469755167655764}
-  - component: {fileID: 7262686111872303666}
-  - component: {fileID: 7272921123275358128}
+  - component: {fileID: 3428605163926340494}
+  - component: {fileID: 3455110938246193204}
+  - component: {fileID: 3446396481945784500}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -160,35 +160,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7254469755167655764
+--- !u!4 &3428605163926340494
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7258083933655922938}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_GameObject: {fileID: 3423075967897938552}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children: []
   m_Father: {fileID: 7259218151124809999}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7262686111872303666
+--- !u!33 &3455110938246193204
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7258083933655922938}
-  m_Mesh: {fileID: 4300000, guid: c477ddd1a6752554f973d650129798ac, type: 3}
---- !u!23 &7272921123275358128
+  m_GameObject: {fileID: 3423075967897938552}
+  m_Mesh: {fileID: 4300000, guid: db4b695ffee705f489163ebe64c47ddd, type: 3}
+--- !u!23 &3446396481945784500
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7258083933655922938}
+  m_GameObject: {fileID: 3423075967897938552}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 600423628}
   - component: {fileID: 600423629}
   m_Layer: 0
-  m_Name: Purple Gas Giant
+  m_Name: Ice Planet
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,8 +257,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7254469755167655764}
   - {fileID: 1036763499}
+  - {fileID: 3428605163926340494}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -270,7 +270,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7259218151124809996}
   serializedVersion: 2
-  m_Mass: 300
+  m_Mass: 600
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -289,8 +289,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 27.40662
-  m_Center: {x: 0.87190247, y: 0, z: 0}
+  m_Radius: 55.43317
+  m_Center: {x: -0.27537918, y: 0, z: 0}
 --- !u!96 &5655675901910407277
 TrailRenderer:
   serializedVersion: 2
@@ -353,8 +353,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.19723403, g: 1, b: 0, a: 1}
-      key1: {r: 0.19723403, g: 1, b: 0, a: 1}
+      key0: {r: 0, g: 1, b: 0.70558023, a: 1}
+      key1: {r: 0, g: 1, b: 0.70558023, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dffdd17441b6a84889c5deb5c983f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotateForce: 18
+  _rotateForce: 10
 --- !u!114 &600423628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e8db9b3eb0d2c9499e1a2beb8b68dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _modelGameObject: {fileID: 7254469755167655764}
+  _modelGameObject: {fileID: 0}
   _collisionParticleEffect: {fileID: 1127159520980604343, guid: 17dcc184b4e3434459b9a7040eaebaf5,
     type: 3}
 --- !u!114 &600423629
