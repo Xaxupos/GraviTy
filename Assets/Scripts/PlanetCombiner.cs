@@ -15,8 +15,6 @@ public class PlanetCombiner : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if(!other.gameObject.CompareTag("Planet")) return;
-
         var colliderRigidbody = other.gameObject.GetComponent<Rigidbody>();
         var planetCombinerFromCollider = colliderRigidbody.GetComponent<PlanetCombiner>();
         var soundPlayer = GetComponentInChildren<ClipHolder>();
