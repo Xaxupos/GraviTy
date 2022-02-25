@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 7259218151124810003}
   - component: {fileID: 600423628}
   - component: {fileID: 600423629}
+  - component: {fileID: 3816911939290251794}
   m_Layer: 0
   m_Name: Purple Gas Giant
   m_TagString: Planet
@@ -471,3 +472,20 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _trailRenderer: {fileID: 5655675901910407277}
+--- !u!114 &3816911939290251794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7259218151124809996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb5859583bed1343b5e191270640156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlanetSprite: {fileID: 21300000, guid: 8e44d6a8a8cc09348b66a62b20c664ec, type: 3}
+  PlanetName: Purple Gas Giant
+  PlanetMass: 300
+  PlanetRotation: 18
+  PlanetStatic: 0

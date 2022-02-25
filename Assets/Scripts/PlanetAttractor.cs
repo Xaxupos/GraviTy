@@ -14,12 +14,12 @@ public class PlanetAttractor : MonoBehaviour
 
     private void Start()
     {
-        AttractorsList.Instance.AddPlanetToList(this);
+        PlanetListHolder.Instance.AddPlanetToList(this);
     }
 
     private void FixedUpdate()
     {
-        foreach(PlanetAttractor planet in AttractorsList.Instance.PlanetAttractors)
+        foreach(PlanetAttractor planet in PlanetListHolder.Instance.PlanetAttractors)
         {
             if(planet != this)
             {
@@ -30,7 +30,7 @@ public class PlanetAttractor : MonoBehaviour
 
     private void OnDisable()
     {
-        AttractorsList.Instance.RemovePlanetFromList(this);
+        PlanetListHolder.Instance.RemovePlanetFromList(this);
     }
 
     public Rigidbody GetRigidbody() => _rigidbody;

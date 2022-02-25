@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 3945469889552453678}
   - component: {fileID: 1600534385}
   - component: {fileID: 1600534386}
+  - component: {fileID: 9178677038876789416}
   m_Layer: 0
   m_Name: Crater Planet
   m_TagString: Planet
@@ -390,6 +391,23 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _trailRenderer: {fileID: 906487693751902364}
+--- !u!114 &9178677038876789416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3945469889552453674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb5859583bed1343b5e191270640156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlanetSprite: {fileID: 21300000, guid: 14aa46b0f8af9984f8b0a3ccf890ec0b, type: 3}
+  PlanetName: Crater Planet
+  PlanetMass: 30
+  PlanetRotation: 60
+  PlanetStatic: 0
 --- !u!1 &3946600846333210074
 GameObject:
   m_ObjectHideFlags: 0
