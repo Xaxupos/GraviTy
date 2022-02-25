@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dffdd17441b6a84889c5deb5c983f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotateForce: 7
+  _rotateForce: 14
 --- !u!114 &600423628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gradient:
     serializedVersion: 2
-    key0: {r: 0.4245283, g: 0, b: 0.35866356, a: 1}
+    key0: {r: 0.2585899, g: 0.029592374, b: 0.3301887, a: 1}
     key1: {r: 0.4245283, g: 0, b: 0.35866356, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}

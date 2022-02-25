@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlanetCombiner : MonoBehaviour
@@ -18,13 +16,11 @@ public class PlanetCombiner : MonoBehaviour
         if(!other.gameObject.CompareTag("Planet")) return;
 
         var colliderRigidbody = other.gameObject.GetComponent<Rigidbody>();
+        var planetCombinerFromCollider = colliderRigidbody.GetComponent<PlanetCombiner>();
+        var soundPlayer = GetComponentInChildren<ClipHolder>();
 
         if(_rigidbody.mass > colliderRigidbody.mass)
         {
-            var planetCombinerFromCollider = colliderRigidbody.GetComponent<PlanetCombiner>();
-            var soundPlayer = GetComponentInChildren<ClipHolder>();
-            var soundPlayerFromCollider = other.gameObject.GetComponentInChildren<ClipHolder>();
-
             float massToAdd = colliderRigidbody.mass;
             Vector3 colliderModelScale = planetCombinerFromCollider._modelGameObject.localScale;
 
@@ -35,6 +31,21 @@ public class PlanetCombiner : MonoBehaviour
             Instantiate(_collisionParticleEffect, other.contacts[0].point, Quaternion.identity);
 
             Destroy(other.gameObject);
+        }
+        if(_rigidbody.mass == colliderRigidbody.mass)
+        {
+            soundPlayer.PlayClip();
+            Instantiate(_collisionParticleEffect, other.contacts[0].point, Quaternion.identity);
+
+            _modelGameObject.gameObject.SetActive(false);
+            _modelGameObject.GetComponentInParent<SphereCollider>().enabled = false;
+            _modelGameObject.GetComponentInParent<Rigidbody>().mass = 0;
+
+            planetCombinerFromCollider._modelGameObject.gameObject.SetActive(false);
+            planetCombinerFromCollider._modelGameObject.GetComponentInParent<SphereCollider>().enabled = false;
+            planetCombinerFromCollider._modelGameObject.GetComponentInParent<Rigidbody>().mass = 0;
+
+            Destroy(gameObject, 2.1f);
         }
     }
 }
