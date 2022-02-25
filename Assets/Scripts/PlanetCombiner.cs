@@ -42,10 +42,12 @@ public class PlanetCombiner : MonoBehaviour
         _modelGameObject.gameObject.SetActive(false);
         _modelGameObject.GetComponentInParent<SphereCollider>().enabled = false;
         _modelGameObject.GetComponentInParent<Rigidbody>().mass = 0;
+        _modelGameObject.GetComponentInParent<TrailRenderer>().enabled = false;
 
         planetCombinerFromCollider._modelGameObject.gameObject.SetActive(false);
         planetCombinerFromCollider._modelGameObject.GetComponentInParent<SphereCollider>().enabled = false;
         planetCombinerFromCollider._modelGameObject.GetComponentInParent<Rigidbody>().mass = 0;
+        planetCombinerFromCollider._modelGameObject.GetComponentInParent<TrailRenderer>().enabled = false;
     }
 
     private void AddMassAndScale(float massToAdd, Vector3 colliderModelScale)

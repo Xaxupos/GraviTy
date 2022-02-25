@@ -57,6 +57,7 @@ public class SimulationStarter : MonoBehaviour
         modelGameObject.gameObject.SetActive(false);
         modelGameObject.GetComponentInParent<SphereCollider>().enabled = false;
         modelGameObject.GetComponentInParent<Rigidbody>().mass = 0;
+        modelGameObject.GetComponentInParent<TrailRenderer>().enabled = false;
 
         Destroy(planet, 2.1f);
     }
