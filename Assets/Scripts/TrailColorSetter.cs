@@ -21,6 +21,14 @@ public class TrailColorSetter : MonoBehaviour
     private void Update()
     {
         _trailRenderer.time = _rigidbody.mass / 8.5f;
-    }
 
+        if(_trailRenderer.time > 20)
+        {
+            _trailRenderer.time = 20;
+        }
+        if(_trailRenderer.time < 5)
+        {
+            _trailRenderer.time = 5;
+        }
+    }
 }

@@ -1603,6 +1603,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 4227574156825552674, guid: a2f23f8932090fc478955957e807bca6,
+        type: 3}
+      propertyPath: field of view
+      value: 63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4227574156825552674, guid: a2f23f8932090fc478955957e807bca6,
+        type: 3}
+      propertyPath: far clip plane
+      value: 8500
+      objectReference: {fileID: 0}
     - target: {fileID: 4227574157178239672, guid: a2f23f8932090fc478955957e807bca6,
         type: 3}
       propertyPath: m_RootOrder
@@ -1661,12 +1671,12 @@ PrefabInstance:
     - target: {fileID: 4227574157178239673, guid: a2f23f8932090fc478955957e807bca6,
         type: 3}
       propertyPath: _moveSpeed
-      value: 300
+      value: 320
       objectReference: {fileID: 0}
     - target: {fileID: 4227574157178239673, guid: a2f23f8932090fc478955957e807bca6,
         type: 3}
       propertyPath: _flyStrength
-      value: 130
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4227574157178239679, guid: a2f23f8932090fc478955957e807bca6,
         type: 3}

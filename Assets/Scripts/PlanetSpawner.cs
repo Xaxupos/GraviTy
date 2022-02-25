@@ -51,6 +51,9 @@ public class PlanetSpawner : MonoBehaviour
     {
         float valueToSet = PlanetsToSpawn * 60;
 
+        if(valueToSet > 4500)
+            valueToSet = 4500;
+
         for (int i = 0; i < PlanetsToSpawn; i++)
         {
             var xPosition = Random.Range(-valueToSet, valueToSet);
