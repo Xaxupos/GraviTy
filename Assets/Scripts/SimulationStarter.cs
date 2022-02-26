@@ -3,6 +3,7 @@ using TMPro;
 
 public class SimulationStarter : MonoBehaviour
 {
+    [SerializeField] private Transform _playerTransform;
     [SerializeField] private PlanetSpawner _planetSpawner;
     [SerializeField] private GameObject[] _objectsToToggle;
     [SerializeField] private GameObject _collisionParticleEffect;
@@ -34,6 +35,7 @@ public class SimulationStarter : MonoBehaviour
 
     private void StopSimulation()
     {
+        _playerTransform.position = Vector3.zero;
         _pressEText.text = "press E to start simulation";
         _simulationRunning = false;
 
@@ -67,6 +69,7 @@ public class SimulationStarter : MonoBehaviour
         GetComponent<AudioSource>().Play();
         if(_planetSpawner != null && !_planetSpawner.CustomSimulation)
         {
+             _playerTransform.position = Vector3.zero;
             _planetSpawner.SpawnPlanets();
         }
 
